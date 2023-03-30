@@ -2,7 +2,7 @@ import pyttsx3
 
 talk = pyttsx3.init()
 rate = talk.getProperty('rate')
-talk.setProperty('rate', 100)
+talk.setProperty('rate', 120)
 print('speaking.....')
 text_speech = 'hi welcome to python programming'
 talk.say(text_speech)
