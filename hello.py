@@ -28,7 +28,6 @@ msg = int(input('Enter how many messages you want :'))
 time.sleep(5)
 if msg != 0:
     for i in range(msg):
-        print('/n')
         print('if you want to exit bombit press 0...')
         print('sending messages ..............')
         bombit(user_text)
