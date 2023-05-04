@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   position: relative;
+    background-color: rgb(3, 3, 7);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container .circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(77, 123, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.circle i {
+    font-size: 28px;
+    color: white;
+}
+.container .line {
+    width: 150px;
+    height: 5px;
+    background-color: greenyellow;
+
+}
+.container .btn {
+    color: white;
+    position: absolute;
+    bottom: 36%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(77, 123, 7);
+    cursor: pointer;
+    box-shadow: 0 0 15px 0 rgb(83, 131, 10);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+.log {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility:hidden;
+    height: 400px;
+    width: 400px;
+    border-radius: 7px;
+    background-color: white;
+   text-align: center;
+   padding: 2rem;
+   box-shadow: 0 0 10px 0 rgb(92, 90, 90);
+   transition: transform .4s, top .4s;
+    animation: anim 1s;
+
+}
+@keyframes anim {
+    50% {
+        opacity: .6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image img {
+    height: 160px;
+    width: 160px;
+}
+.extra {
+    padding: 10px;
+    background-color:rgb(77, 123, 7) ;
+    border-radius: 50%;
+    font-size: 22px;
+    color: white;
+}
+.sub {
+    color: white;
+    margin-top: 15px;
+   cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(10, 10, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 0 rgb(10, 10, 20);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.add {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.fr {
+    width: 80px;
+    height: 80px;
+}

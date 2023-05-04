@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/6b343d8855.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="line"></div>
+        <div class="circle">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="line"></div>
+        <div class="circle">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        
+        <div class="btn">Submit</div>
+    </div>
+
+
+
+    <div class="log">
+        <h2>Thank you!👍</h2>
+        <div class="text">
+            <h2>Successfully created!
+                <i class="fa-solid fa-check extra"></i>
+            </h2>    
+        </div>
+        <div class="image">
+            <img src="cr.png">
+            
+        </div>
+
+        <div class="sub">Completed
+            
+        </div>
+    </div>
+
+
+    <script>
+        const open = document.querySelector('.btn')
+        open.addEventListener('click', function() {
+            const container = document.querySelector('.log');
+            container.classList.add('add')
+        })
+        const close = document.querySelector('.sub')
+        close.addEventListener('click', function() {
+            const container = document.querySelector('.log');
+            container.classList.remove('add')
+        })
+    </script>
+</body>
+</html>
